@@ -1,0 +1,40 @@
+{
+  "name": "fastify-orientdb",
+  "version": "0.1.0",
+  "description": "Fastify orientdb connection plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && tap test.js",
+    "orientdb": "docker run -d --name orientdb -p 2424:2424 -p 2480:2480 -e ORIENTDB_ROOT_PASSWORD=admin orientdb"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mahmed8003/fastify-orientdb.git"
+  },
+  "keywords": [
+    "fastify",
+    "orientdb",
+    "graph",
+    "nosql",
+    "database",
+    "connection"
+  ],
+  "author": "Muhammad Ahmed <mahmed8003@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mahmed8003/fastify-orientdb/issues"
+  },
+  "homepage": "https://github.com/mahmed8003/fastify-orientdb#readme",
+  "devDependencies": {
+    "fastify": "^0.25.3",
+    "standard": "^10.0.3",
+    "tap": "^10.7.2"
+  },
+  "dependencies": {
+    "fastify-plugin": "^0.1.0",
+    "orientjs": "^2.2.6"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}

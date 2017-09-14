@@ -1,7 +1,8 @@
 'use strict'
 
 const fp = require('fastify-plugin')
-const ODatabase = require('orientjs').ODatabase
+const Orient = require('orientjs')
+const ODatabase = Orient.ODatabase
 
 function fastifyOrientdb (fastify, options, next) {
   const database = new ODatabase(options)
@@ -10,6 +11,7 @@ function fastifyOrientdb (fastify, options, next) {
   .then(db => {
     fastify
     .decorate('db', db)
+    .decorate('orient', Orient)
     .addHook('onClose', close)
     next()
   })

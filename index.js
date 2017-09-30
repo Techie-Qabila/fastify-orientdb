@@ -29,4 +29,4 @@ function close (fastify, done) {
     })
 }
 
-module.exports = fp(fastifyOrientdb, '>=0.13.1')
+module.exports = fp(fastifyOrientdb, '>=0.29.0')

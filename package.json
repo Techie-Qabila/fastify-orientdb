@@ -1,6 +1,6 @@
 {
   "name": "fastify-orientdb",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Fastify orientdb connection plugin",
   "main": "index.js",
   "scripts": {
@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "fastify-plugin": "^0.1.1",
-    "orientjs": "^2.2.6"
+    "orientjs": "^2.2.7"
   },
   "engines": {
     "node": ">=8.5.0"
